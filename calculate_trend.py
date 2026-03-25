@@ -5,7 +5,7 @@ import json
 
 # 1. Legge in automatico il file caricato su GitHub
 # (Assicurati che il nome qui sotto corrisponda a quello del file caricato)
-df_assets = pd.read_csv('assets.csv')
+df_assets = pd.read_csv('asset.csv')
 
 # 2. Estrae la colonna "Ticker" ignorando eventuali spazi vuoti
 tickers = df_assets.dropna().astype(str).str.strip().tolist()
